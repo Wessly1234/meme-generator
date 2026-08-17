@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Meme Generator</title>
+</head>
+<body style="text-align:center; font-family:Arial;">
+
+<h1>🔥 AI Meme Generator</h1>
+
+<form method="POST">
+    <input type="text" name="topic" placeholder="Enter topic" required>
+    <button type="submit">Generate Meme</button>
+</form>
+
+{% if meme %}
+    <h2>Your Meme:</h2>
+    <img src="{{ meme }}" width="500">
+{% endif %}
+
+</body>
+</html>
